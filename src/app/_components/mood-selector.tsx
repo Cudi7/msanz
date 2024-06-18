@@ -148,7 +148,7 @@ export function MoodSelector() {
             Subcategorías de {moods.find((m) => m.id === selectedMood)?.name}
           </h2>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {subcategories[selectedMood].map((subcategory) => (
+            {subcategories[selectedMood]?.map((subcategory) => (
               <div
                 key={subcategory}
                 className="flex cursor-pointer flex-col items-center justify-center rounded-lg bg-slate-900/10 p-6 text-black hover:bg-slate-900/20"
