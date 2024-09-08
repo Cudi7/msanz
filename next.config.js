@@ -7,7 +7,18 @@ await import("./src/env.js");
 /** @type {import("next").NextConfig} */
 const config = {
   images: {
-    domains: ["montsesanz.com", "utfs.io"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "montsesanz.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "utfs.io",
+        pathname: "/**",
+      },
+    ],
   },
 };
 
