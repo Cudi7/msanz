@@ -1,9 +1,12 @@
-import { MoodSelector } from "@/components/mood-selector";
+import MoodsList from "@/components/moods-list";
+import { getStaticImages } from "@/lib/fetchImages";
 
-export default function MoodPage() {
+export default async function MoodPage() {
+  const images = await getStaticImages();
+
   return (
     <div>
-      <MoodSelector />
+      <MoodsList images={images} />
     </div>
   );
 }
