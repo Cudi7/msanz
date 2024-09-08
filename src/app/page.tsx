@@ -1,5 +1,6 @@
-import Hero from "./_components/hero";
-import { MoodSelector } from "./_components/mood-selector";
+// import { MoodSelector } from "../_components/mood-selector";
+
+import Hero from "@/components/hero";
 
 export default function HomePage() {
   return <Hero />;
